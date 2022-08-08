@@ -14,15 +14,16 @@
 
 <body>
  <div class="login">
-	<h1>Predict Fish weight</h1>
+	<h1>Predict Fish Species</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Length1" placeholder="Length1" required="required" />
-        <input type="text" name="Length2" placeholder="Length2" required="required" />
-		<input type="text" name="Height" placeholder="Height" required="required" />
-		<input type="text" name="petal_width" placeholder="Petal_Width" required="required" />
-	        	<input type="text" name="Width" placeholder="Width" required="required" />
+    	<input type="text" name="Length1" placeholder="Weight" required="required" />
+        <input type="text" name="Length2" placeholder="Length1" required="required" />
+		<input type="text" name="Height" placeholder="Length2" required="required" />
+		<input type="text" name="petal_width" placeholder="Length3" required="required" />
+	        	<input type="text" name="Width" placeholder="Height" required="required" />
+	                <input type="text" name="Width" placeholder="Width" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
