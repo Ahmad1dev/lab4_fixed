@@ -33,7 +33,7 @@ def predict():
     prediction = regressor.predict(final_features)
 
     
-    return render_template('index.html', prediction_text='The flower belong to species {}'.format(prediction))
+    return render_template('index.html', prediction_text='The fish belong to species {}'.format(prediction))
     
     
 
